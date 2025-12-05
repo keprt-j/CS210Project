@@ -12,6 +12,7 @@ This project focuses on data acquisition from WHO GHO API to gather TB incidence
 datascienceproject/
 ├── notebooks/
 │   └── 01_data_acquisition.ipynb    # Main data acquisition notebook
+|   └── WorldBank_acquisition.ipynb  # Data acquisition notebook for World Bank Data
 ├── data/
 │   ├── database/
 │   │   └── tb_data.db               # SQLite database (gitignored)
@@ -39,6 +40,10 @@ jupyter notebook notebooks/01_data_acquisition.ipynb
   - Endpoint: `https://ghoapi.azureedge.net/api`
   - Indicators: TB_e_inc_tbhiv_num, TB_e_mort_exc_tbhiv_num
 
+- **World Bank API**: GDP, Poverty Rates, Population
+  - Endpoint: `http://api.worldbank.org/v2/`
+  - Indicators: NY.GDP.MKTP.CD, SI.POV.DDAY, SP.POP.TOTL
+
 ## Notebook
 
 The `01_data_acquisition.ipynb` notebook is self-contained and includes:
@@ -59,6 +64,7 @@ Run all cells sequentially to:
 - `country_metadata`: Country codes, names, and regions
 - `tb_data`: TB incidence and mortality data
 - `unified_tb_data`: Unified view joining all tables
+- `country_data`: Contains GDP, poverty rates, and populations
 
 ## Next Steps
 
