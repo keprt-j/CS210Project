@@ -181,11 +181,3 @@ Some countries may have missing data for certain indicators. The ML notebook inc
 ## Requirements
 
 See `requirements.txt` for the complete list of Python packages and versions.
-
-## License
-
-[Add your license information here]
-
-## Contact
-
-[Add your contact information here]
